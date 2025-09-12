@@ -41,11 +41,11 @@ const Footer: React.FC = () => {
       <div className="w-full py-6 px-6 sm:px-8 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <div className="w-6 h-6  flex items-center justify-center">
-             <button className="w-22 h-22">
+             <button className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
                <img 
                 src="https://real-estate-black-kappa.vercel.app/img/logo.svg" 
-                alt="footer-logo" 
-                className="w-12 h-12 " />
+                alt="App Logo" 
+                className="w-12 h-12 object-contain" />
               </button> 
           </div>
           <span className="font-bold text-xl">PropBot</span>
