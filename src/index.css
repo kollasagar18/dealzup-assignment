@@ -1,31 +1,40 @@
+/* Import Font Awesome first (must be at top for PostCSS) */
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 /* Reusable utility classes */
 :root {
   --brand: #1f4ed8;
 }
+
 .container-xl {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
+
 .section {
   @apply container-xl py-10 md:py-14;
 }
+
 .card {
   @apply bg-white rounded-2xl shadow-soft border border-slate-100;
 }
+
 .btn {
   @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium transition;
 }
+
 .btn-primary {
   @apply btn bg-brand text-white hover:bg-brand-dark;
 }
+
 .btn-outline {
   @apply btn border border-brand text-brand hover:bg-brand/10;
 }
+
 .input {
   @apply w-full rounded-xl border border-slate-300 px-4 py-2 outline-none focus:ring-2 focus:ring-brand/40;
 }
-
