@@ -1,8 +1,8 @@
 // src/pages/Login.jsx
+import { auth } from "../services/firebase";
 import { useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { signInWithEmailAndPassword } from "firebase/auth"
-import { auth } from "../services/firebase"
 import { Eye, EyeOff, Mail, Lock, ArrowLeft, ArrowRight } from "lucide-react"
 
 export default function Login() {
