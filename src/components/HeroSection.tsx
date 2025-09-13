@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
         <img
           alt="Dream Home"
           className="w-full h-[400px] md:h-[527px] object-cover rounded-2xl object-[center_20%]"
-          src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://real-estate-black-kappa.vercel.app/img/hero-img.jpg"
         />
         <div className="absolute inset-0 bg-black bg-opacity-10 rounded-2xl"></div>
         
