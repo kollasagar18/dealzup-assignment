@@ -1,44 +1,4 @@
 export default function Footer() {
-  return (
-    <footer className="mt-16 bg-slate-900 text-slate-200">
-      <div className="section">
-        <div className="grid md:grid-cols-3 gap-10">
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-2">Propify</h3>
-            <p className="text-slate-400">
-              Find your dream home in one click. Beautiful properties for sale
-              and rent worldwide.
-            </p>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-2">Quick Links</h4>
-            <ul className="space-y-1 text-slate-400">
-              <li>
-                <a href="/" className="hover:text-white">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="/listings" className="hover:text-white">
-                  Properties
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-2">Newsletter</h4>
-            <Newsletter />
-          </div>
-        </div>
-        <p className="mt-10 text-center text-slate-500 text-sm">
-          © {new Date().getFullYear()} Propify. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  )
-}
-
-function Newsletter() {
   const onSubmit = (e) => {
     e.preventDefault()
     const email = new FormData(e.currentTarget).get("email")
@@ -50,15 +10,62 @@ function Newsletter() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex gap-2">
-      <input
-        name="email"
-        type="email"
-        required
-        placeholder="Enter your email"
-        className="input bg-slate-800 border-slate-700 text-slate-100 placeholder:text-slate-400"
-      />
-      <button className="btn-primary">Subscribe</button>
-    </form>
+    <footer className="bg-[#1E3A8ACC] text-white pt-14 pb-4 w-full">
+      {/* Top Section */}
+      <div className="flex flex-col items-center justify-center w-full px-4">
+        <h2 className="text-3xl font-bold mb-5 text-center">
+          Get in Touch with Us
+        </h2>
+        <p className="text-xl mb-8 text-center font-normal">
+          Subscribe now for exclusive
+          <br />
+          property insights and deals!
+        </p>
+
+        {/* Newsletter Form */}
+        <form
+          onSubmit={onSubmit}
+          className="w-full flex justify-center mb-10 px-2 sm:px-0"
+        >
+          <div className="flex flex-col sm:flex-row items-center w-full max-w-full sm:max-w-xl bg-[#D9D9D9] rounded-[16px] sm:rounded-full px-3 sm:px-4 py-4 sm:py-2 gap-3 sm:gap-0">
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="Enter your email"
+              className="w-full px-4 py-3 sm:px-3 sm:py-3 rounded-[12px] sm:rounded-full bg-transparent text-gray-900 text-lg outline-none border-none font-medium placeholder-gray-600"
+            />
+            <button
+              type="submit"
+              className="w-full sm:w-auto px-7 py-3 sm:py-2 rounded-[12px] sm:rounded-full bg-[#1E3A8A] text-white text-lg border-none shadow-none"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      {/* Bottom Section */}
+      <div className="w-full py-6 px-6 sm:px-8 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Logo */}
+        <div className="flex items-center gap-2">
+          <img alt="footer-logo" className="w-6 h-6" src="https://real-estate-black-kappa.vercel.app/img/footer-logo.svg" />
+          <span className="font-bold text-xl">PropBot</span>
+        </div>
+
+        {/* Links */}
+        <div className="flex justify-center items-center gap-6 flex-wrap text-sm">
+          <span className="cursor-pointer hover:underline">For Sale</span>
+          <span className="cursor-pointer hover:underline">Rentals</span>
+          <span className="cursor-pointer hover:underline">New Projects</span>
+          <span className="cursor-pointer hover:underline">Property News</span>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-sm text-center sm:text-right">
+          ©{new Date().getFullYear()} PropBot. All rights reserved
+        </div>
+      </div>
+    </footer>
   )
 }

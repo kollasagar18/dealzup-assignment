@@ -4,22 +4,22 @@ import { Home, Key, Mic, Lock } from 'lucide-react';
 const ServicesSection: React.FC = () => {
   const services = [
     {
-      icon: <Home className="w-8 h-8 text-[#1E3A8A]" />,
+      icon: <img alt="rent" src="	https://real-estate-black-kappa.vercel.app/img/cylinder-svg.svg" className="w-8 h-8"/>,
       title: 'Buy & Sell Properties',
       description: 'Find verified homes for sale or list your property with ease.'
     },
     {
-      icon: <Key className="w-8 h-8 text-[#1E3A8A]" />,
+      icon: <img alt="rent" src="https://real-estate-black-kappa.vercel.app/img/key-chain.svg" className="w-8 h-8"/>,
       title: 'Find Rental Homes',
       description: 'Browse through thousands of rental options suited to your needs'
     },
     {
-      icon: <Mic className="w-8 h-8 text-[#1E3A8A]" />,
+      icon: <img alt="rent" src="https://real-estate-black-kappa.vercel.app/img/mic.svg" className="w-8 h-8"/>,
       title: 'Smart AI Property Search',
       description: 'Get instant recommendations based on your budget & location'
     },
     {
-      icon: <Lock className="w-8 h-8 text-[#1E3A8A]" />,
+      icon: <img alt="rent" src="https://real-estate-black-kappa.vercel.app/img/lock.svg" className="w-8 h-8"/>,
       title: 'Safe & Secure Transactions',
       description: 'Verified listings & secure deals to ensure a smooth experience.'
     }

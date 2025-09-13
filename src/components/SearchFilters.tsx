@@ -11,7 +11,7 @@ const SearchFilters: React.FC = () => {
   return (
     <div className="bg-transparent md:bg-white rounded-full flex flex-col md:flex-row justify-between items-center gap-4 mt-[-40px] px-4 md:px-10 py-4 max-w-5xl mx-auto w-full shadow-lg z-20 relative">
       <div className="relative w-full md:w-[220px] h-[56px]">
-        <Building className="pointer-events-none absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
+        <img alt="rent"src="	https://real-estate-black-kappa.vercel.app/img/rent.svg"className="pointer-events-none absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5"/>
         <select 
           className="appearance-none w-full h-full bg-white border border-gray-300 rounded-full pl-11 pr-10 text-gray-700 font-medium text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition hover:border-gray-400"
           value={filters.type}
@@ -25,7 +25,7 @@ const SearchFilters: React.FC = () => {
       </div>
 
       <div className="relative w-full md:w-[220px] h-[56px]">
-        <Home className="pointer-events-none absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
+        <img alt="rent"src="	https://real-estate-black-kappa.vercel.app/img/house.svg"className="pointer-events-none absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5"/>
         <select 
           className="appearance-none w-full h-full bg-white border border-gray-300 rounded-full pl-11 pr-10 text-gray-700 font-medium text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition hover:border-gray-400"
           value={filters.property}
@@ -42,7 +42,7 @@ const SearchFilters: React.FC = () => {
       </div>
 
       <div className="relative w-full md:w-[220px] h-[56px]">
-        <MapPin className="pointer-events-none absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" />
+        <img alt="rent"src="https://real-estate-black-kappa.vercel.app/img/location.svg"className="pointer-events-none absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5"/>
         <select 
           className="appearance-none w-full h-full bg-white border border-gray-300 rounded-full pl-11 pr-10 text-gray-700 font-medium text-base focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition hover:border-gray-400"
           value={filters.location}

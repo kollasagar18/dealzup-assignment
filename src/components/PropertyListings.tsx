@@ -6,40 +6,80 @@ interface PropertyListingsProps {
 }
 
 const PropertyListings: React.FC<PropertyListingsProps> = ({ type }) => {
-  const properties = [
+  // 🔹 Separate properties for Sale
+  const saleProperties = [
     {
       id: 1,
       name: 'Lester Hackett',
       location: 'Andersonfurt, New Jersey',
       rating: '4.7/5',
-      price: type === 'sale' ? '$212,345' : '$1,746/month',
-      image: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      price: '$212,345',
+      image: 'https://picsum.photos/seed/rko0Qcmc/1736/389'
     },
     {
       id: 2,
       name: 'Karl Rodriguez',
       location: 'Joelstad, Kansas',
       rating: '4.1/5',
-      price: type === 'sale' ? '$237,035' : '$1,992/month',
-      image: 'https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      price: '$237,035',
+      image: 'https://picsum.photos/seed/house-sale-1/600/400'
     },
     {
       id: 3,
       name: 'Claudia Waters',
       location: 'Weimannberg, Arizona',
       rating: '4.5/5',
-      price: type === 'sale' ? '$261,725' : '$2,238/month',
-      image: 'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      price: '$261,725',
+      image: 'https://picsum.photos/seed/house-sale-2/600/400'
     },
     {
       id: 4,
       name: 'Dora Nikolaus',
       location: 'Ladariusmouth, Illinois',
       rating: '4.9/5',
-      price: type === 'sale' ? '$286,415' : '$2,484/month',
-      image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+      price: '$286,415',
+      image: 'https://picsum.photos/seed/house-sale-3/600/400'
     }
   ];
+
+
+  const rentalProperties = [
+    {
+      id: 101,
+      name: 'Alex Johnson',
+      location: 'Miami, Florida',
+      rating: '4.3/5',
+      price: '$1,746/month',
+      image: 'https://picsum.photos/seed/4Xh2OkmJ/2929/2948'
+    },
+    {
+      id: 102,
+      name: 'Sophia Brown',
+      location: 'Austin, Texas',
+      rating: '4.6/5',
+      price: '$1,992/month',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQRkVDKX_w5FtJK-zirHHTEtBo0BPWa_oh1L0LbcHXBmJCIWWEtJ5CnOt_2aTwQY9l5rc&usqp=CAU'
+    },
+    {
+      id: 103,
+      name: 'Michael Green',
+      location: 'Seattle, Washington',
+      rating: '4.4/5',
+      price: '$2,238/month',
+      image: 'https://kumaonplanner.com/wp-content/uploads/2023/03/buy-property-in-uttarakhand-1024x567.jpg'
+    },
+    {
+      id: 104,
+      name: 'Emma Wilson',
+      location: 'Denver, Colorado',
+      rating: '4.8/5',
+      price: '$2,484/month',
+      image: 'https://www.shernaproperties.com/wp-content/uploads/2023/05/What-are-The-Top-Advantages-of-Purchasing-a-Property-When-You-Are-Young-featured-image.jpg'
+    }
+  ];
+
+  // Pick properties based on type
+  const properties = type === 'sale' ? saleProperties : rentalProperties;
 
   const title = type === 'sale' 
     ? 'Best Properties Available For Sale'
@@ -47,7 +87,7 @@ const PropertyListings: React.FC<PropertyListingsProps> = ({ type }) => {
   
   const description = type === 'sale'
     ? 'Browse our top-rated properties for sale, featuring premium listings tailored to your needs. Find your dream home today!'
-    : 'Browse our top-rated properties for rent, featuring premium listings tailored to your needs. Find your dream home today!';
+    : 'Browse our top-rated rental properties, featuring premium listings tailored to your needs. Find your perfect rental today!';
   
   const buttonText = type === 'sale' 
     ? 'View More Properties'

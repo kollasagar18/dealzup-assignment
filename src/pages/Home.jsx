@@ -16,7 +16,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-gray-100">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+          src="https://real-estate-black-kappa.vercel.app/img/hmg.jpg"
           alt="Hero Property"
           className="w-full h-[500px] object-cover rounded-b-2xl"
         />

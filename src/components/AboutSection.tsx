@@ -37,12 +37,12 @@ const AboutSection: React.FC = () => {
           <img
             alt="Modern House"
             className="w-full md:w-[320px] h-[160px] md:h-[400px] rounded-[10px] shadow-lg border-4 border-white object-cover"
-            src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://real-estate-black-kappa.vercel.app/img/img1.png"
           />
           <img
             alt="Cabin House"
             className="w-full md:w-[320px] h-[130px] md:h-[320px] rounded-[10px] border border-white shadow-lg object-cover mt-4 md:mt-0 static md:absolute md:bottom-[-30px] md:right-[-90px]"
-            src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://real-estate-black-kappa.vercel.app/img/img2.png"
           />
         </div>
 

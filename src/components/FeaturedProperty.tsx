@@ -17,7 +17,7 @@ const FeaturedProperty: React.FC = () => {
           <img
             alt="Lester Hackett"
             className="w-full h-[300px] lg:h-[384px] object-cover group-hover:scale-105 transition-transform duration-300"
-            src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://picsum.photos/seed/rko0Qcmc/1736/389"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-6 py-5 rounded-b-3xl">
             <p className="text-white text-sm opacity-90 mb-1">By Finder & Projects</p>
@@ -31,7 +31,7 @@ const FeaturedProperty: React.FC = () => {
               <img
                 alt="Property"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://picsum.photos/seed/4Xh2OkmJ/2929/2948"
               />
             </div>
           </div>
@@ -41,14 +41,14 @@ const FeaturedProperty: React.FC = () => {
               <img
                 alt="Property"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
               />
             </div>
             <div className="w-80 h-20 lg:h-44 rounded-3xl overflow-hidden shadow-lg group cursor-pointer">
               <img
                 alt="Property"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="https://www.adanirealty.com/-/media/project/realty/blogs/types-of-residential-properties.ashx"
               />
             </div>
           </div>

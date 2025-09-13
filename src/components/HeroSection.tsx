@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
         
         <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-full max-w-5xl flex flex-col md:flex-row justify-between items-center px-6 gap-4 z-20">
           <div className="flex items-center bg-white h-12 px-5 shadow-md w-full md:w-[600px] rounded-[12px]">
-            <MapPin className="w-6 h-6 ml-2 text-gray-500" />
+            <img alt="location" class="w-8 h-8 ml-2" src="https://real-estate-black-kappa.vercel.app/img/search-location.svg"></img>
             <input
               placeholder="Search Location..."
               className="flex-grow outline-none text-gray-700 font-medium placeholder:text-gray-400 bg-transparent px-3"
@@ -34,7 +34,7 @@ const HeroSection: React.FC = () => {
               onChange={(e) => setSearchLocation(e.target.value)}
             />
             <button aria-label="search" className="hover:bg-gray-100 rounded-full p-1">
-              <Search className="w-6 h-6 text-gray-500" />
+              <img alt="search" className="w-10 h-10 -ml-2"src="	https://real-estate-black-kappa.vercel.app/img/search.svg" />
             </button>
           </div>
           

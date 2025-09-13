@@ -18,7 +18,7 @@ const Header: React.FC = () => {
                <img 
                 src="https://real-estate-black-kappa.vercel.app/img/logo.svg" 
                 alt="App Logo" 
-                className="w-12 h-12 object-contain" />
+                className="w-8 h-8 object-contain" />
               </button> 
           <span className="text-xl font-bold text-gray-900">PropBot</span>
         </Link>
