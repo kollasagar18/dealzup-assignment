@@ -22,7 +22,7 @@ const PropertyListings: React.FC<PropertyListingsProps> = ({ type }) => {
       location: 'Joelstad, Kansas',
       rating: '4.1/5',
       price: '$237,035',
-      image: 'https://picsum.photos/seed/house-sale-1/600/400'
+      image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const PropertyListings: React.FC<PropertyListingsProps> = ({ type }) => {
       location: 'Weimannberg, Arizona',
       rating: '4.5/5',
       price: '$261,725',
-      image: 'https://picsum.photos/seed/house-sale-2/600/400'
+      image: 'https://picsum.photos/seed/PUxkFA82t/3417/3616'
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const PropertyListings: React.FC<PropertyListingsProps> = ({ type }) => {
       location: 'Ladariusmouth, Illinois',
       rating: '4.9/5',
       price: '$286,415',
-      image: 'https://picsum.photos/seed/house-sale-3/600/400'
+      image: 'https://picsum.photos/seed/sN8urPFg/3683/3455'
     }
   ];
 
