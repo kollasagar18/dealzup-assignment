@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Search, MapPin } from 'lucide-react';
+import Hero from "../components/Hero";  // adjust path if needed
+
 
 const HeroSection: React.FC = () => {
   const [searchLocation, setSearchLocation] = useState('');
